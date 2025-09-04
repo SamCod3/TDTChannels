@@ -16,4 +16,14 @@ A continuación se indica lo que deben cumplir los aportes hacia este repositori
 - Preferiblemente sin transparencias y con fondo blanco.
 - No es necesaria la indicación explicita del nombre del canal en el logo.
 
+### Verificación de enlaces
+
+Antes de enviar una Pull Request, comprueba que los enlaces siguen activos ejecutando el verificador:
+
+```bash
+python scripts/validate_streams.py
+```
+
+Instala previamente las dependencias con `pip install requests`.
+
 Gracias por colaborar!
