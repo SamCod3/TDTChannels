@@ -1,3 +1,30 @@
+# Virtual environments
 venv/
+
+# IDE settings
 .idea/
+
+# Python bytecode
 __pycache__/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.swp
+*~
+
+# Build and packaging directories
+build/
+dist/
+out/
+node_modules/
+*.egg-info/
+
