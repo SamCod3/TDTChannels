@@ -1,6 +1,14 @@
 # TDTChannels - Canales IPTV en abierto
 Lista de canales de televisión, y radio, que se emiten en abierto por Internet. Especialmente enfocado a España, y a los principales canales Internacionales del mundo. Además la programación EPG está disponible e integrada automáticamente en los ficheros generados.
 
+### Generar listas
+
+Antes de realizar un commit es necesario regenerar `TELEVISION.md` y `RADIO.md` a partir de los datos en `data/` ejecutando:
+
+```bash
+python scripts/generate_lists.py
+```
+
 ### Listas de reproducción
 *(Última actualización: 02/02/2019)*
 
