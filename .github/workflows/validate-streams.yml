@@ -1,0 +1,22 @@
+name: Validate Streams
+
+on:
+  pull_request:
+    paths:
+      - 'TELEVISION.md'
+      - 'RADIO.md'
+      - 'scripts/validate_streams.py'
+      - '.github/workflows/validate-streams.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install requests
+      - name: Validate streams
+        run: python scripts/validate_streams.py
